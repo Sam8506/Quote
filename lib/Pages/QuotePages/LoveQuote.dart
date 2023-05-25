@@ -61,9 +61,10 @@ class _LovequatePageState extends State<LovequatePage> {
       ),
     
       body: isLoad == true? Center(child: Lottie.asset(
-        "assets/Animation/Ani1.json",
+        "assets/Animation/quateLoadAnimation.json",
         height: 200,
-        width: 200
+        width: 200,
+        repeat: true
 
       )
       )

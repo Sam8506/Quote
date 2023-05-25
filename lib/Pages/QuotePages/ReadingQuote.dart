@@ -1,9 +1,7 @@
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, depend_on_referenced_packages
 
-import 'dart:convert';
 import 'dart:math';
 import 'package:expandable_text/expandable_text.dart';
-import 'package:e_book1/Menu/TabBarButton.dart/drawerHomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -77,11 +75,13 @@ var colors = [
       ),
     
       body: isLoad == true? Center(child: Lottie.asset(
-        "assets/Animation/Ani1.json",
+        "assets/Animation/quateLoadAnimation.json",
         height: 200,
         width: 200,
-        frameRate: FrameRate(300)
-      )):
+        repeat: true
+
+      )
+      ):
        ListView.builder(
         physics: const BouncingScrollPhysics(),
          shrinkWrap: true,

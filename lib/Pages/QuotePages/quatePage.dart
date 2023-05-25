@@ -106,17 +106,18 @@ bool isLoad = true;
                       builder: (context,snapshot){
                       
                         return loading?Center(child: Lottie.asset(
-        "assets/Animation/Ani1.json",
+        "assets/Animation/quateLoadAnimation.json",
         height: 200,
         width: 200,
-        frameRate: FrameRate(400)
+        repeat: true
 
-      )):ListView.builder(
+      )
+      ):ListView.builder(
                           shrinkWrap: true,
                           //itemCount: 5,
                           itemCount: data.length,
                           itemBuilder: (BuildContext context, int index) { 
-                            print("Lengt= " + data.length.toString()); 
+                            print("Length = " + data.length.toString()); 
                           return Container(
                             // height: MediaQuery.of(context).size.height/3,
                             //color: colors[Random().nextInt(5)],

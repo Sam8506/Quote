@@ -75,12 +75,13 @@ var colors = [
       ),
     
       body: isLoad == true?Center(child: Lottie.asset(
-        "assets/Animation/Ani1.json",
+        "assets/Animation/quateLoadAnimation.json",
         height: 200,
         width: 200,
-        frameRate: FrameRate(350)
+        repeat: true
 
-      )):
+      )
+      ):
        ListView.builder(
         physics: const BouncingScrollPhysics(),
          shrinkWrap: true,

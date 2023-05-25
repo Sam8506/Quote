@@ -32,16 +32,23 @@ class QuoteTypeSelection extends StatelessWidget {
                 width:  MediaQuery.of(context).size.width/2-40,
                 decoration:  BoxDecoration(
                   
-                  color: Color(0xff060047).withOpacity(0.8),
+                  color: const Color(0xff060047).withOpacity(0.8),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Center(
-                  child: Text(
-                    'Love',
-                  style: TextStyle(
-                    fontFamily: GoogleFonts.pacifico().fontFamily,
-                    color: Colors.white,
-                    fontSize: 35),
+                  child: Column(
+                    children: [
+                      Text(
+                        'Love',
+                      style: TextStyle(
+                        fontFamily: GoogleFonts.pacifico().fontFamily,
+                        color: Colors.white,
+                        fontSize: 35),
+                      ),
+                      Image.asset('assets/Icons/heart.png',
+                      fit: BoxFit.fill,
+                      )
+                    ],
                   ),
                 ),
               ),

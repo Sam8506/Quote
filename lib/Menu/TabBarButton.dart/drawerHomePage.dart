@@ -1,3 +1,5 @@
+// ignore_for_file: sort_child_properties_last, prefer_const_constructors
+
 import 'package:e_book1/Pages/QuotePages/quatePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -20,11 +22,11 @@ class _drawerHomePageState extends State<drawerHomePage> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.pink),
-              accountName: Text("Samir Patel"),
-              accountEmail: Text("sam90@gmail.com"),
+              accountName: const Text("Samir Patel"),
+              accountEmail: const Text("sam90@gmail.com"),
               currentAccountPicture: GestureDetector(
-                child: CircleAvatar(
-                  child: Text(
+                child:  CircleAvatar(
+                  child:  Text(
                     "SP",
                     style: TextStyle(
                         color: Colors.pink,
@@ -39,8 +41,8 @@ class _drawerHomePageState extends State<drawerHomePage> {
               onTap: (){},
               child: ListTile(
                 onTap: (){Navigator.popAndPushNamed(context, "home");},
-                leading: Icon(Icons.home, color: Colors.pink),
-                title: Text("Home Page"),
+                leading: const Icon(Icons.home, color: Colors.pink),
+                title:const  Text("Home Page"),
               ),
             ),
             InkWell(
@@ -62,6 +64,11 @@ class _drawerHomePageState extends State<drawerHomePage> {
                 leading: Icon(Icons.shopping_basket, color: Colors.red),
                 title: Text("Quate"),
               ),
+            ),
+            InkWell(
+              child:ListTile
+              (title
+              : const Text('Saved Quate')) ,
             ),
             Divider(),
             InkWell(
